@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Il tutto sarà contenuto in un RelativeLayout per semplicità di posizionamento -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--Tutte le celle dei valori sono dei TextView dentro un LinearLayout orizionale-->
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <!--Spieghiamo ogni attributo particolare per le celle:
+        layout_width/height = 50dp - dopo molte prove fatte personalmente, la dimensione 50dp è perfetta
+        sui telefoni, un pò meno per i tablet enormi.
+
+        textSize = 30dp - come per le dimensioni del layout, la trovo come dimensione testo perfetta
+        per il quadrato 50x50
+
+        gravity = center - per centrare il testo
+
+        background = @drawable/retro_numero - il file retro_numero presente nella certella drawable è
+        un semplice quadrato di sfondo bianco con spessore di 2dp, usato qui per indicare lo spazio occupato
+        da ogni singola cella-->
+        <TextView
+            android:id="@+id/n1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+        <TextView
+            android:id="@+id/n2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+        <TextView
+            android:id="@+id/n3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+        <TextView
+            android:id="@+id/n4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+        <TextView
+            android:id="@+id/n5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+        <TextView
+            android:id="@+id/n6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+        <TextView
+            android:id="@+id/n7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+        <TextView
+            android:id="@+id/n8"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="0"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:background="@drawable/retro_numero"
+            android:onClick="numeroclick"/>
+    </LinearLayout>
+
+    <!--TextView statico-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modalità Attuale: "
+        android:textSize="25dp"
+        android:layout_above="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"/>
+
+    <!--Il TextView che mostra la modalità attuale-->
+    <TextView
+        android:id="@+id/modalita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="D"
+        android:textSize="25dp" />
+
+    <!--Il bottone da premere per cambiare la modalità da Destra a Sinistra, il suo background
+    segue la stessa logica di quello per le celle, ma è di sfondo arancione per differenziarli-->
+    <Button
+        android:id="@+id/cambiamod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cambia Modalita"
+        android:textSize="20dp"
+        android:layout_below="@id/ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/retro_bottone"
+        android:onClick="cambiamod"/>
+
+</RelativeLayout>

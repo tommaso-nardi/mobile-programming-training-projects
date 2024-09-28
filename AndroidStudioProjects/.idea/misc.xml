@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/CalcolatriceBinaria" />
+    <file type="web" url="file://$PROJECT_DIR$/CampoMinato" />
+    <file type="web" url="file://$PROJECT_DIR$/CerchioBallerino" />
+    <file type="web" url="file://$PROJECT_DIR$/DoppioTris" />
+    <file type="web" url="file://$PROJECT_DIR$/GiocoDel8" />
+    <file type="web" url="file://$PROJECT_DIR$/IndovinaParola" />
+    <file type="web" url="file://$PROJECT_DIR$/ListaContatti" />
+    <file type="web" url="file://$PROJECT_DIR$/MemoryCarte" />
+    <file type="web" url="file://$PROJECT_DIR$/NardiTommaso" />
+    <file type="web" url="file://$PROJECT_DIR$/RiempiCaselle" />
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

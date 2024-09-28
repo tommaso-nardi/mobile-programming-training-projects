@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Imposta un colore di sfondo per la View -->
+    <solid android:color="#ffA500"/> <!-- Cambia il colore con quello che preferisci -->
+    <stroke android:width="2dp"/>
+    <!-- Definisci gli angoli arrotondati -->
+    <corners android:radius="5dp"/> <!-- Specifica il raggio degli angoli arrotondati -->
+</shape>

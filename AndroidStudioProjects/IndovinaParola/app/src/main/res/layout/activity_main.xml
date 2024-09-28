@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/guess"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="#D3D3D3"
+        android:gravity="center"
+        android:text="________"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/tex"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/rounded_background"
+        android:layout_below="@id/guess"
+        android:layout_alignLeft="@id/guess"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="A"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/prova"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background2"
+        android:gravity="center"
+        android:layout_below="@id/guess"
+        android:layout_alignRight="@id/guess"
+        android:layout_marginTop="20dp"
+        android:text="Prova!"
+        android:textSize="30dp"
+        android:onClick="prova"/>
+
+    <TextView
+        android:id="@+id/tent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guess"
+        android:layout_centerHorizontal="true"
+        android:text="Tentativi: 11"
+        android:textSize="30dp"
+        android:layout_marginTop="100dp" />
+
+    <Button
+        android:id="@+id/aiuto"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tent"
+        android:background="@drawable/rounded_background2"
+        android:gravity="center"
+        android:onClick="aiuto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Aiuto?"
+        android:textSize="30dp" />
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/aiuto"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_background2"
+        android:gravity="center"
+        android:text="Reset?"
+        android:textSize="30dp"
+        android:onClick="reset"/>
+</RelativeLayout>
